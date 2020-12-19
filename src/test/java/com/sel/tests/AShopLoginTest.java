@@ -5,6 +5,7 @@
  */
 package com.sel.tests;
 
+import com.sel.jenkinssel.Calculator;
 import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -36,10 +37,10 @@ public class AShopLoginTest {
     WebDriver driver;
     @Before
     public void setUp() {
-       System.setProperty("webdriver.chrome.driver", "c:\\qa\\drivers\\chromedriver.exe");
+    /*   System.setProperty("webdriver.chrome.driver", "c:\\qa\\drivers\\chromedriver.exe");
        driver=new ChromeDriver();
        driver.manage().window().maximize();
-       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);*/
     }
     
     @After
@@ -52,7 +53,7 @@ public class AShopLoginTest {
     //
     // @Test
     // public void hello() {}
-     @Test
+    /* @Test
     public void testLogin() throws InterruptedException{
         driver.get("http://advantageonlineshopping.com/#/");
         driver.findElement(By.id("hrefUserIcon")).click();
@@ -62,5 +63,12 @@ public class AShopLoginTest {
         Thread.sleep(5000);
         driver.findElement(By.xpath("//a[@id='menuUserLink']/span")).click();
         driver.findElement(By.xpath("//div[@id='loginMiniTitle']/label[3]")).click();
+    }*/
+    
+    @Test
+    public void testAdd(){
+        Calculator c=new Calculator();
+        int result=c.add(100,200);
+        assertEquals(300, result);
     }
 }
