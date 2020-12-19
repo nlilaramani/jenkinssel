@@ -44,6 +44,7 @@ public class AShopLoginTest {
     
     @After
     public void tearDown() {
+        driver.quit();
     }
 
     // TODO add test methods here.
