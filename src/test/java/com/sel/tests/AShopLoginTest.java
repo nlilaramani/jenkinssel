@@ -71,4 +71,11 @@ public class AShopLoginTest {
         int result=c.add(100,200);
         assertEquals(300, result);
     }
+    
+      @Test
+    public void testAdd1(){
+        Calculator c=new Calculator();
+        int result=c.add(100,300);
+        assertEquals(400, result);
+    }
 }
